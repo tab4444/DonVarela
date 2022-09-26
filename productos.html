@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="shortcut icon" href="public/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="seccionCentralNav">
+            <div class="logoSeccion">
+                <h2>don</h2>
+                <h1>varela</h1>
+                <h5>panadería</h5>
+            </div>
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="#" class="userIn">productos</a></li> 
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </div>
+        <div class="carritoContainer">
+            <span class="itemsEnCarrito">0</span>
+            <i id="openModal" class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </nav>
+
+    <div class="fondoTransparente" id="fondoTransparente">
+        <div class="popupContainer" id="popupContainer">
+            <div class="containerTitulo">
+                <h6>carrito de compras</h6>
+                <i id="closeModal" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="productoSubtotal">
+                <h6>producto</h6>
+                <h6>subtotal</h6>
+            </div>
+            <div class="productosCarrito">
+                <!-- Se renderizan los productos en el carrito mediante JS -->
+            </div>
+            <div class="precioTotal">
+                <!-- Se renderiza el precio y cantidad de items mediante JS -->
+                <h6>total (0 productos):</h6> 
+                <h6>$0</h6>
+            </div>
+            <div class="seccionComprar">
+                <button onclick="comprarCarrito()">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="seccionProductos">
+        <div class="productos">
+            <!-- Se renderizan los productos mediate JS -->
+        </div>
+    </div>
+
+    <footer>
+        <h4>redes sociales</h4>
+        <div class="links">
+            <a target="_blank" href="https://www.instagram.com/blocktab/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:thiagoblock445@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="public/js/productos.js"></script>
+    <script src="public/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/bfee6bbf74.js" crossorigin="anonymous"></script>
+</body>
+</html>
