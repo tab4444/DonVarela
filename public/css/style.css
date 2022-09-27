@@ -27,6 +27,7 @@ nav{
     background-color: #dadada;
     align-items: center;
     border-bottom: 1px solid #393e4331;
+    z-index: 1000;
 }
 nav .seccionCentralNav{
     display: flex;
